@@ -1,0 +1,37 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ESLint-Formatter",
+		"FileIcons",
+		"Git blame",
+		"LSP",
+		"LSP-css",
+		"LSP-dockerfile",
+		"LSP-eslint",
+		"LSP-file-watcher-chokidar",
+		"LSP-html",
+		"LSP-intelephense",
+		"LSP-json",
+		"LSP-some-sass",
+		"LSP-stylelint",
+		"LSP-twiggy",
+		"LSP-typescript",
+		"LSP-vue",
+		"LSP-yaml",
+		"Monokai++",
+		"nginx",
+		"Package Control",
+		"Sass",
+		"Solarized Color Scheme",
+		"SublimeLinter",
+		"Terminal",
+		"Terminus",
+		"Theme - El Capitan",
+		"Twig",
+		"Vue Syntax Highlight",
+	],
+}

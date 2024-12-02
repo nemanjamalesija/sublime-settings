@@ -1,0 +1,62 @@
+{
+	// "auto_complete_commit_on_tab": true,
+	"bold_folder_labels": true,
+	"draw_white_space": "selection",
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns": [
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"coverage",
+		"node_modules"
+	],
+	"font_face": "Fira Code Retina",
+	// "font_face": "Consolas",
+	"font_options": [
+		"no_round",
+		"gray_antialias"
+	],
+	"gpu_window_buffer": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages": [
+		"Vintage",
+	],
+	"line_padding_bottom": 1,
+	// "line_padding_top": 1,
+	"match_brackets": true,
+	"match_tags": false,
+	"mini_diff": false,
+	"open_files_in_new_window": true,
+	"rulers": [
+		80,
+		100
+	],
+	"scroll_past_end": true,
+	"scroll_speed": 0,
+	"shift_tab_unindent": true,
+	"show_full_path": true,
+	"show_tab_close_buttons": false,
+	"tab_size": 4,
+	"trim_trailing_white_space_on_save": true,
+	"index_files": false,
+	"font_size": 14,
+	"auto_match_enabled": false,
+	"auto_complete": true,
+	"auto_complete_include_snippets": true,
+	"auto_complete_selector": "meta.tag, meta.attribute, source - comment - string.quoted.double - string.quoted.single",
+	"auto_complete_triggers": [
+		{
+			"selector": "source.js",
+			"characters": "",
+		},
+		{
+			"selector": "text.html",
+			"characters": "",
+		}
+	],
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"theme": "Adaptive.sublime-theme",
+	"ui_scale": 1.1,
+}

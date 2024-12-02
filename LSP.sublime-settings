@@ -1,0 +1,20 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+	"show_inlay_hints": true,
+	"link_highlight_style": "none",
+	"diagnostics_gutter_marker": "sign",
+	"diagnostics_highlight_style": {
+		"error": "squiggly",
+		"warning": "",
+		"info": "stippled",
+		"hint": "stippled"
+	},
+	"show_multiline_diagnostics_highlights": false,
+	// "inhibit_snippet_completions": true,
+	// "lsp_format_on_save": true,
+	"lsp_code_actions_on_save": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.stylelint": true,
+		"source.removeUnusedImports.ts": true
+	},
+}

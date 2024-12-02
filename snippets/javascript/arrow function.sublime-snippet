@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+const ${1:functionName} = (${2:param}) =>
+]]></content>
+    <tabTrigger>afun</tabTrigger>
+    <scope>source.js, source.ts</scope>
+</snippet>

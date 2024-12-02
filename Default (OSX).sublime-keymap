@@ -1,0 +1,94 @@
+[
+    {
+        "keys": [
+            "ctrl+alt+up"
+        ],
+        "command": "swap_line_up"
+    },
+    {
+        "keys": [
+            "ctrl+alt+down"
+        ],
+        "command": "swap_line_down"
+    },
+    {
+        "keys": [
+            "super+b"
+        ],
+        "command": "toggle_side_bar"
+    },
+    {
+        "keys": [
+            "super+shift+o"
+        ],
+        "command": "focus_side_bar"
+    },
+    {
+        "keys": [
+            "ctrl+`"
+        ],
+        "command": "terminus_open",
+        "args": {
+            "cwd": "${folder:${file_path:${project_path}}}",
+            "panel_name": "Terminus",
+            "config_name": "Default"
+        }
+    },
+    {
+        "keys": [
+            "ctrl+escape"
+        ],
+        "command": "terminus_close",
+        "context": [
+            {
+                "key": "terminus_view"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "alt+down"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 7,
+            "by": "lines",
+            "forward": true
+        }
+    },
+    {
+        "keys": [
+            "super+shift+down"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 7,
+            "by": "lines",
+            "forward": true,
+            "extend": true
+        }
+    },
+    {
+        "keys": [
+            "alt+up"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 7,
+            "by": "lines",
+            "forward": false
+        }
+    },
+    {
+        "keys": [
+            "super+shift+up"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 7,
+            "by": "lines",
+            "forward": false,
+            "extend": true
+        }
+    }
+]

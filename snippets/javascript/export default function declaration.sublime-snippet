@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+ export default function ${1:functionName}(${2:argument}) {}
+]]></content>
+    <tabTrigger>exdfn</tabTrigger>
+    <scope>source.js, source.ts</scope>
+</snippet>

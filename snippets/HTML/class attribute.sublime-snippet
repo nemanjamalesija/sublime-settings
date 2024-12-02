@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+import { useRoute } from 'vue-router'
+
+const route = useRoute('/[...path]+')
+]]></content>
+    <tabTrigger>cls</tabTrigger>
+    <scope>text.html</scope>
+</snippet>

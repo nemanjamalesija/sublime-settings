@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+script lang="ts" setup>
+//
+</script>
+
+<template>
+//
+</template>
+]]></content>
+    <tabTrigger>sfst</tabTrigger>
+    <description>Vue Single-File Component Template Setup Typescript</description>
+</snippet>

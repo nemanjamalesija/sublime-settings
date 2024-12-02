@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * ${1:\$${2:Comment text}}
+ */
+$0]]></content>
+    <tabTrigger>commentline</tabTrigger>
+    <scope>source.css, source.scss, source.js, source.ts</scope>
+    <description>Sub-section comment block</description>
+</snippet>

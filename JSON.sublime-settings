@@ -1,0 +1,12 @@
+{
+	"extensions":
+	[
+		"sublime-commands",
+		".jshintrc",
+		".eslintrc",
+		".jscsrc",
+		".stylelintrc",
+		".babelrc",
+		".prettierrc"
+	]
+}

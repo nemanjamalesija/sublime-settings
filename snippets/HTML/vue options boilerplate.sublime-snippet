@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+template>
+   //
+</template>
+<script>
+export default {
+  components: {},
+  props: {},
+  data() {
+    return {};
+  },
+  computed: {
+    //
+  },
+  mounted() {
+    //
+  },
+  methods: {
+    //
+  },
+};
+</script>
+]]></content>
+    <tabTrigger>sfo</tabTrigger>
+    <description>Vue Single-File Component Template</description>
+</snippet>

@@ -1,0 +1,68 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables": {
+		"black3": "hsl(220, 10%, 17%)",
+		"greenMetalic": "hsl(145, 70%, 60%)",
+	},
+	"globals": {
+		"highlight": "#e600e6",
+	},
+	"rules": [
+		{
+			"name": "Function call",
+			"scope": "variable.function, variable.annotation",
+			"foreground": "var(yellow2)"
+		},
+		{
+			"name": "",
+			"scope": "support.function.builtin",
+			"foreground": "var(yellow2)"
+		},
+		{
+			"name": "",
+			"scope": "support.function.console",
+			"foreground": "var(yellow2)"
+		},
+		{
+			"name": "",
+			"scope": "entity.name.function.constructor.js",
+			"foreground": "var(yellow2)",
+			"font_style": "underline italic"
+		},
+		{
+			"name": "",
+			"scope": "keyword.declaration.function.arrow",
+			"foreground": "var(red2)"
+		},
+		{
+			"name": "",
+			"scope": "variable.language.this",
+			"foreground": "var(red2)",
+			"font_style": "italic"
+		},
+		{
+			"name": "",
+			"scope": "variable.language.super",
+			"foreground": "var(red2)",
+			"font_style": "italic"
+		},
+		{
+			"name": "",
+			"scope": "constant.language.boolean",
+			"foreground": "var(greenMetalic)",
+			"font_style": "italic"
+		},
+		{
+			"name": "",
+			"scope": "constant.numeric.value",
+			"foreground": "var(greenMetalic)",
+			"font_style": "italic"
+		},
+		{
+			"name": "",
+			"scope": "entity.name.tag.other",
+			"foreground": "var(blue)",
+			"font_style": "italic"
+		},
+	]
+}
