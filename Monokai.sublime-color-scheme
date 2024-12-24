@@ -1,17 +1,51 @@
-// Documentation at https://www.sublimetext.com/docs/color_schemes.html
 {
 	"variables": {
-		"black3": "hsl(220, 10%, 17%)",
+		"black3": "hsl(220, 10%, 11%)",
 		"greenMetalic": "hsl(145, 70%, 60%)",
+		"pinkCustom": "#e600e6",
+		"purple": "hsl(300, 100%, 76%)"
 	},
 	"globals": {
-		"highlight": "#e600e6",
+		"highlight": "var(pinkCustom)",
+        "brackets_options": "glow underline",
+        "brackets_foreground": "var(blue)",
+        "tags_options": "glow underline",
+        "tags_foreground": "var(blue)"
 	},
 	"rules": [
+
 		{
 			"name": "Function call",
 			"scope": "variable.function, variable.annotation",
 			"foreground": "var(yellow2)"
+		},
+		{
+			"name": "Rules name css",
+			"scope": "support.type.property-name.css",
+			"foreground": "var(yellow2)",
+			"font_style": "normal"
+		},
+		{
+			"name": "Color css",
+			"scope": "constant.language.null.css",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Display none css",
+			"scope": "constant.other.color",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Class name css",
+			"scope": "entity.other.attribute-name.class.css",
+			"foreground": "var(purple)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Attribute name css",
+			"scope": "entity.other.attribute-name.css",
+			"foreground": "var(purple)",
+			"font_style": "italic"
 		},
 		{
 			"name": "",
@@ -59,10 +93,30 @@
 			"font_style": "italic"
 		},
 		{
-			"name": "",
+			"name": "Vue components",
 			"scope": "entity.name.tag.other",
 			"foreground": "var(blue)",
 			"font_style": "italic"
+		},
+		{
+			"name": "Attributes",
+			"scope": "entity.other.attribute-name.html, entity.other.attribute-name.vue",
+			"font_style": "italic"
+		},
+		{
+			"name": "Constant language js",
+			"scope": "constant.language.null.js, constant.language.undefined.js",
+			"foreground": "var(greenMetalic)"
+		},
+		{
+			"name": "Typescript type",
+			"scope": "support.type",
+			"foreground": "var(purple)"
+		},
+		{
+			"name": "Typescript type",
+			"scope": "support.type.object.console.js",
+			"foreground": "var(blue)"
 		},
 	]
 }
