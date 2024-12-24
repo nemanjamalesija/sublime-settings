@@ -6,15 +6,17 @@
 	"diagnostics_highlight_style": {
 		"error": "squiggly",
 		"warning": "",
-		"info": "stippled",
-		"hint": "stippled"
+		"info": "underline",
+		"hint": "underline"
 	},
+	"document_highlight_style": "",
 	"show_multiline_diagnostics_highlights": false,
 	// "inhibit_snippet_completions": true,
 	// "lsp_format_on_save": true,
 	"lsp_code_actions_on_save": {
 		"source.fixAll.eslint": true,
 		"source.fixAll.stylelint": true,
-		"source.removeUnusedImports.ts": true
+		// "source.removeUnusedImports.ts": true
 	},
 }
+
