@@ -6,11 +6,11 @@
 		"purple": "hsl(300, 100%, 76%)"
 	},
 	"globals": {
-		"highlight": "var(pinkCustom)",
-        "brackets_options": "glow underline",
-        "brackets_foreground": "var(blue)",
-        "tags_options": "glow underline",
-        "tags_foreground": "var(blue)"
+	"highlight": "var(purple)",
+        "brackets_options": "glow bold",
+        "brackets_foreground": "#fff",
+        "tags_options": "glow",
+        "tags_foreground": "#fff"
 	},
 	"rules": [
 
