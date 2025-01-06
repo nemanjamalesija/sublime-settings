@@ -1,4 +1,17 @@
+
 [
+  { "keys": ["super+shift+l"], "command": "find_all_under" },
+     {
+        "keys": ["super+shift+,"],
+        "command": "focus_neighboring_group",
+        "args": {"forward": false}
+    },
+    {
+        "keys": ["super+shift+."],
+        "command": "focus_neighboring_group",
+        "args": {"forward": true}
+    },
+
     {
         "keys": [
             "ctrl+alt+up"
@@ -51,7 +64,51 @@
         ],
         "command": "move_amount",
         "args": {
+            "amount": 3,
+            "by": "lines",
+            "forward": true
+        }
+    },
+    {
+        "keys": [
+            "super+down"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 5,
+            "by": "lines",
+            "forward": true
+        }
+    },
+    {
+        "keys": [
+            "alt+super+down"
+        ],
+        "command": "move_amount",
+        "args": {
             "amount": 7,
+            "by": "lines",
+            "forward": true
+        }
+    },
+    {
+        "keys": [
+            "ctrl+alt+super+down"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 10,
+            "by": "lines",
+            "forward": true
+        }
+    },
+    {
+        "keys": [
+            "ctrl+alt+super+shift+down"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 30,
             "by": "lines",
             "forward": true
         }
@@ -62,7 +119,7 @@
         ],
         "command": "move_amount",
         "args": {
-            "amount": 7,
+            "amount": 3,
             "by": "lines",
             "forward": true,
             "extend": true
@@ -74,6 +131,28 @@
         ],
         "command": "move_amount",
         "args": {
+            "amount": 3,
+            "by": "lines",
+            "forward": false
+        }
+    },
+    {
+        "keys": [
+            "super+up"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 5,
+            "by": "lines",
+            "forward": false
+        }
+    },
+    {
+        "keys": [
+            "alt+super+up"
+        ],
+        "command": "move_amount",
+        "args": {
             "amount": 7,
             "by": "lines",
             "forward": false
@@ -81,14 +160,96 @@
     },
     {
         "keys": [
+            "ctrl+alt+super+up"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 10,
+            "by": "lines",
+            "forward": false
+        }
+    },
+    {
+        "keys": [
+            "ctrl+alt+super+shift+up"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 30,
+            "by": "lines",
+            "forward": false
+        }
+    },
+
+    {
+        "keys": [
             "super+shift+up"
         ],
         "command": "move_amount",
         "args": {
-            "amount": 7,
+            "amount": 3,
             "by": "lines",
             "forward": false,
             "extend": true
         }
-    }
+    },
+    {
+        "keys": ["super+enter"],
+        "command": "lsp_symbol_definition",
+        "context": [
+            { "key": "selection_empty", "operator": "equal", "operand": true },
+            { "key": "num_selections", "operator": "equal", "operand": 1 }
+        ]
+    },
+    {
+        "keys": ["super+enter"],
+        "command": "lsp_typescript_goto_source_definition",
+        "args": {
+            "command_name": "_typescript.goToSourceDefinition",
+            "command_args": [
+                "$file_uri",
+                "$position"
+            ]
+        },
+        "context": [
+            { "key": "selection_empty", "operator": "equal", "operand": true },
+        ]
+    },
+     // 1) Split layout, focus second pane, clone file
+    {
+        "keys": ["super+."],
+        "command": "chain",          // Requires Chain of Command plugin
+        "args": {
+            "commands": [
+                {
+                    "command": "set_layout",
+                    "args": {
+                        "cols": [0.0, 0.5, 1.0],
+                        "rows": [0.0, 1.0],
+                        "cells": [
+                            [0, 0, 1, 1],
+                            [1, 0, 2, 1]
+                        ]
+                    }
+                },
+                { "command": "focus_group", "args": { "group": 1 } },
+                { "command": "clone_file" },
+                { "command": "reopen_last_file", "args": {"source": "window"}  },
+            ]
+        }
+    },
+
+    // 2) Reset layout (close split)
+    {
+        "keys": ["super+,"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [
+                [0, 0, 1, 1]
+            ]
+        }
+    },
 ]
+
