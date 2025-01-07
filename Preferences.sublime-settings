@@ -70,7 +70,11 @@
 	"always_prompt_on_reload": false,
 	"remember_open_files": false,
 	"auto_complete_trailing_spaces": false,
-
+	"indent_guide_options": [
+		"draw_active_single",
+		"draw_normal",
+		"solid"
+	],
 	// "ui_scale": 1.1,
 }
 
