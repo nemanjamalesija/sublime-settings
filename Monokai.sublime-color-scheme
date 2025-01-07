@@ -1,23 +1,30 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
 {
+	"name": "Monokai",
+    	"author": "Sublime HQ Pty Ltd, Wimer Hazenberg / Nemanja Malesija",
 	"variables": {
-		"black3": "hsl(220, 10%, 11%)",
+		"black3": "#1A1A1A",
 		"greenMetalic": "hsl(145, 70%, 60%)",
 		"pinkCustom": "#e600e6",
-		"purple": "hsl(300, 100%, 76%)"
+		"purple": "hsl(300, 100%, 76%)",
+		"white3": "hsl(0, 0%, 85%)",
+		"white4": "hsl(0, 0%, 45%)"
 	},
 	"globals": {
-	"highlight": "var(purple)",
-        "brackets_options": "glow bold",
-        "brackets_foreground": "#fff",
-        "tags_options": "glow",
-        "tags_foreground": "#fff"
+		"highlight": "var(purple)",
+	        "brackets_options": "glow bold",
+	        "brackets_foreground": "var(white)",
+	        "tags_options": "glow",
+	        "tags_foreground": "var(white3)",
+	        "active_guide": "var(white4)",
 	},
 	"rules": [
 
 		{
 			"name": "Function call",
 			"scope": "variable.function, variable.annotation",
-			"foreground": "var(yellow2)"
+			"foreground": "var(yellow2)",
+
 		},
 		{
 			"name": "Rules name css",
@@ -48,56 +55,57 @@
 			"font_style": "italic"
 		},
 		{
-			"name": "",
+			"name": "Support function",
 			"scope": "support.function.builtin",
 			"foreground": "var(yellow2)"
 		},
 		{
-			"name": "",
+			"name": "Console log ",
 			"scope": "support.function.console",
 			"foreground": "var(yellow2)"
 		},
 		{
-			"name": "",
+			"name": "Constructor",
 			"scope": "entity.name.function.constructor.js",
 			"foreground": "var(yellow2)",
 			"font_style": "underline italic"
 		},
 		{
-			"name": "",
+			"name": "Arrow pointer",
 			"scope": "keyword.declaration.function.arrow",
 			"foreground": "var(red2)"
 		},
 		{
-			"name": "",
+			"name": "Javascript this variable",
 			"scope": "variable.language.this",
 			"foreground": "var(red2)",
 			"font_style": "italic"
 		},
 		{
-			"name": "",
+			"name": "Javascript super variable",
 			"scope": "variable.language.super",
 			"foreground": "var(red2)",
 			"font_style": "italic"
 		},
 		{
-			"name": "",
+			"name": "Constant language boolean",
 			"scope": "constant.language.boolean",
 			"foreground": "var(greenMetalic)",
 			"font_style": "italic"
 		},
 		{
-			"name": "",
+			"name": "Constants",
 			"scope": "constant.numeric.value",
 			"foreground": "var(greenMetalic)",
 			"font_style": "italic"
 		},
 		{
 			"name": "Vue components",
-			"scope": "entity.name.tag.other",
+			"scope": "entity.name.tag.other, entity.name.tag.inline.any.html,entity.name.tag.template.html,entity.name.tag.script.html, entity.name.tag.block.any.html, entity.name.tag.inline.form.html",
 			"foreground": "var(blue)",
 			"font_style": "italic"
 		},
+
 		{
 			"name": "Attributes",
 			"scope": "entity.other.attribute-name.html, entity.other.attribute-name.vue",
@@ -105,7 +113,7 @@
 		},
 		{
 			"name": "Constant language js",
-			"scope": "constant.language.null.js, constant.language.undefined.js",
+			"scope": "constant.language.null.js, constant.language.undefined.js, constant.language.null.twig, constant.language.undefined.twig",
 			"foreground": "var(greenMetalic)"
 		},
 		{
@@ -120,3 +128,4 @@
 		},
 	]
 }
+
