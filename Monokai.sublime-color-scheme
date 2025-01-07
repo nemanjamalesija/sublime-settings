@@ -100,7 +100,7 @@
 			"font_style": "italic"
 		},
 		{
-			"name": "Vue components",
+			"name": "HTML tags / Vue components",
 			"scope": "entity.name.tag.other, entity.name.tag.inline.any.html,entity.name.tag.template.html,entity.name.tag.script.html, entity.name.tag.block.any.html, entity.name.tag.inline.form.html",
 			"foreground": "var(blue)",
 			"font_style": "italic"
