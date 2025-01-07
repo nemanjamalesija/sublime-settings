@@ -1,6 +1,7 @@
 
 [
-  { "keys": ["super+shift+l"], "command": "find_all_under" },
+     { "keys": ["super+k", "super+shift+."], "command": "destroy_pane", "args": {"direction": "self"} },
+    { "keys": ["super+shift+l"], "command": "find_all_under" },
      {
         "keys": ["super+shift+,"],
         "command": "focus_neighboring_group",
@@ -58,6 +59,24 @@
             }
         ]
     },
+    {
+    "keys": ["alt+x"],
+    "command": "move_amount",
+    "args": {
+        "amount": 3,
+        "by": "characters",
+        "forward": true
+    }
+},
+    {
+    "keys": ["alt+z"],
+    "command": "move_amount",
+    "args": {
+        "amount": 3,
+        "by": "characters",
+        "forward": false
+    }
+},
     {
         "keys": [
             "alt+down"
@@ -120,6 +139,30 @@
         "command": "move_amount",
         "args": {
             "amount": 3,
+            "by": "lines",
+            "forward": true,
+            "extend": true
+        }
+    },
+    {
+        "keys": [
+            "super+shift+alt+down"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 5,
+            "by": "lines",
+            "forward": true,
+            "extend": true
+        }
+    },
+        {
+        "keys": [
+            "super+shift+alt+ctrl+down"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 30,
             "by": "lines",
             "forward": true,
             "extend": true
@@ -194,6 +237,30 @@
         }
     },
     {
+        "keys": [
+            "super+shift+alt+up"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 5,
+            "by": "lines",
+            "forward": false,
+            "extend": true
+        }
+    },
+    {
+        "keys": [
+            "super+shift+alt+ctrl+up"
+        ],
+        "command": "move_amount",
+        "args": {
+            "amount": 30,
+            "by": "lines",
+            "forward": false,
+            "extend": true
+        }
+    },
+    {
         "keys": ["super+enter"],
         "command": "lsp_symbol_definition",
         "context": [
@@ -215,41 +282,10 @@
             { "key": "selection_empty", "operator": "equal", "operand": true },
         ]
     },
-     // 1) Split layout, focus second pane, clone file
-    {
-        "keys": ["super+."],
-        "command": "chain",          // Requires Chain of Command plugin
-        "args": {
-            "commands": [
-                {
-                    "command": "set_layout",
-                    "args": {
-                        "cols": [0.0, 0.5, 1.0],
-                        "rows": [0.0, 1.0],
-                        "cells": [
-                            [0, 0, 1, 1],
-                            [1, 0, 2, 1]
-                        ]
-                    }
-                },
-                { "command": "focus_group", "args": { "group": 1 } },
-                { "command": "clone_file" },
-                { "command": "reopen_last_file", "args": {"source": "window"}  },
-            ]
-        }
-    },
 
-    // 2) Reset layout (close split)
     {
-        "keys": ["super+,"],
-        "command": "set_layout",
-        "args": {
-            "cols": [0.0, 1.0],
-            "rows": [0.0, 1.0],
-            "cells": [
-                [0, 0, 1, 1]
-            ]
-        }
-    },
+        "keys": ["super+."], "command": "go_to_line"
+    }
 ]
+
 
