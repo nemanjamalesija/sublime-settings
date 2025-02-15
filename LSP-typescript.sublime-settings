@@ -1,14 +1,33 @@
 {
-	// "initializationOptions": {
-	// 	"plugins": [
-	// 		{
-	// 			"name": "@vue/typescript-plugin",
-	// 			"location": "/Users/nemanjamalesija/Library/Caches/Sublime Text/Package Storage/LSP-vue/20.12.2/server/node_modules/@vue/typescript-plugin",
-	// 			"languages": [
-	// 				"vue"
-	// 			]
-	// 		}
-	// 	]
-	// },
-	// "selector": "source.js, source.jsx, source.ts, source.tsx, text.html.vue"
+
+// to be added inside .%PROJECTNAME%-sublime-project file
+	"settings": {
+		"LSP": {
+			"LSP-vue": {
+				"initializationOptions": {
+					"vue.hybridMode": true
+				},
+				// Preferred for handling requests in Vue files over LSP-typescript.
+				"priority_selector": "text.html.vue source.js, text.html.vue source.ts",
+				"disabled_capabilities": {
+					"definitionProvider": true,
+					"referencesProvider": true,
+					"typeDefinitionProvider": true,
+				},
+			},
+			"LSP-typescript": {
+				"selector": "source.js, source.jsx, source.ts, source.tsx, text.html.vue",
+				"initializationOptions": {
+					"plugins": [
+						{
+							"languages": ["vue"],
+                                                         // update node version manually for now
+							"location": "/Users/nemanjamalesija/Library/Caches/Sublime Text/Package Storage/LSP-vue/20.12.2/server/node_modules",
+							"name": "@vue/typescript-plugin",
+						}
+					],
+				},
+			},
+		}
+	},
 }
