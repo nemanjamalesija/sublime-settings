@@ -1,0 +1,12 @@
+{
+	"font_face": "JetBrains Mono",
+	"font_size": 16,
+	"side_bar_layout": "tabs",
+	"diff_style": "inline",
+	"display_author_date": true,
+	"expand_merge_commits_by_default": false,
+	"image_diff_style": "onion-skin",
+	"time_format": "system",
+	"theme": "Merge.sublime-theme",
+	"ui_scale": 1.1,
+}
